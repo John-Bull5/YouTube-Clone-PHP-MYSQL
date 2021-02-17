@@ -1,0 +1,387 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+#pageContainer{
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+}
+
+#mastHeadContainer{
+    width: 100%;
+    background-color: #fff;
+    height: 56px;
+    border-bottom: 1px solid #e8e8e8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 7px 16px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+#mastHeadContainer button:not(.searchButton),#mastHeadContainer .rightIcons i {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+}
+#mastHeadContainer button i{
+    width: 100%;
+}
+#mastHeadContainer .logoContainer {
+    width: 150px;
+}
+#mastHeadContainer .logoContainer i {
+    height: 25px;
+    margin-left: 8px;
+    color: red;
+}
+
+#mastHeadContainer .logoContainer i .text {
+    color: black;
+}
+
+
+#sideNavContainer{
+    width: 240px;
+    background-color: #f5f5f5;
+    padding-top: 56px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainSectionContainer{
+    padding-top: 56px;
+    display: flex;
+}
+#mainContentContainer{
+    padding: 10px 30px;
+    display: flex;
+    flex: 1;
+}
+
+#mainSectionContainer.leftPadding{
+    padding-left: 240px;
+}
+
+#mastHeadContainer .searchBarContainer .searchButton i {
+    height: 21px;
+    width: 20px;
+}
+#mastHeadContainer .searchBarContainer{
+    margin: 0 40px;
+    flex: 1;
+    display: flex;
+}
+#mastHeadContainer .searchBarContainer form{
+    flex: 1;
+    display: flex;
+}
+#mastHeadContainer .searchBarContainer form .searchBar{
+    flex: 1;
+    max-width: 600px;
+    color: #111;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 100;
+    border: 1px solid #ccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: none;
+    box-shadow: #eee 0px 1px 2px 0px inset;
+}
+#mastHeadContainer .searchBarContainer .searchButton {
+    height: 32px;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+    width: 60px;
+}
+#mastHeadContainer .searchBarContainer .searchButton i{
+    height: 21px;
+    width: 20px;
+}
+
+#mastHeadContainer .rightIcons i {
+    cursor: pointer;
+    height: 60px;
+    width: 40px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    color: grey;
+}
+#mastHeadContainer .rightIcons{
+    height: 100%;
+}
+
+.column{
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    min-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+/* sign in page */
+
+.signInContainer{
+    background-color: #eeffee;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInContainer .column .header i {
+    width: 300px;
+    color: red;
+}
+.signInContainer .column .header i .text {
+    color: black;
+}
+.signInContainer .column {
+    flex-grow: 0;
+    width: 450px;
+    padding: 20px 35px;
+    max-height: 100%;
+    margin: 2rem 0;
+    /* overflow-y: auto; */
+}
+.signInContainer .column .header{
+    padding: 20px 0;
+}
+.signInContainer .column .header h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 16px;
+}
+.signInContainer .column .header span{
+    font-size: 14px;
+}
+
+/* .signInContainer .column .loginForm{
+    padding-top: 24px;
+} */
+
+/* .signInContainer .column form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signInContainer .column form
+input[type="text"],
+.signInContainer .column form
+input[type="email"],
+.signInContainer .column form input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+
+*/
+
+/* .signInContainer .column form 
+input[type="submit"] {
+    background-color: #4285f4;
+    color: #fff;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+} */
+.signInMessage{
+    font-size: 14px;
+    color: #212529;
+    font-weight: 400;
+}
+
+.videoInfo{
+    width: 100%;
+    padding: 20px 0 8px 0;
+}
+
+.videoInfo h1{
+    display: block;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.videoInfo .bottomSection{
+    display: flex;
+}
+
+.videoInfo .bottomSection .viewCounts{
+    color: rgba(17,17,17,0.6);
+    font-size: 16px;
+    flex: 1;
+}
+
+.videoInfo .bottomSection .controls{
+    flex: 1;
+    text-align: right;
+}
+
+.videoInfo .bottomSection .controls button{
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: rgba(17,17,17,0.6);
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.videoInfo .bottomSection .controls button i{
+    height: 20px;
+    width: 20px;
+    margin: 8px 4px 8px 8px;
+}
+
+.profilePicture{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+button .fa{
+    color: gray;
+}
+.thumbs_active{
+    color: black !important;
+}
+
+.secondaryInfo .topRow{
+    display: flex;
+    margin: 12px;
+}
+
+.secondaryInfo .topRow .profilePicture{
+    margin-right: 15px;
+    width: 48px;
+    height: 48px;
+    border: 50%;
+}
+
+.secondaryInfo .topRow .uploadInfo{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.secondaryInfo .topRow .uploadInfo .date{
+    color:  rgba(17,17,17,0.6);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.secondaryInfo .description{
+    margin-left: 64px;
+    max-width: 615px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.secondaryInfo{
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.secondaryInfo .topRow .button{
+    padding:  6px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+}
+
+.secondaryInfo .topRow .subscribeBtnContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondaryInfo .topRow .editVideoBtnContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondaryInfo .topRow .subscribeBtnContainer .subscribe{
+    background-color: #f00;
+    color: #fff;
+}
+.secondaryInfo .topRow .subscribeBtnContainer .unsubscribe{
+    background-color: #eee;
+    color: rgba(17,17,17,0.6);
+}
+.secondaryInfo .topRow .editVideoBtnContainer .edit{
+    background-color: #2692e6;
+    color: #fff;
+}
+
+.secondaryInfo .topRow .uploadInfo .owner a{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.commentSection .header{
+    margin-top: 24px;
+    margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentSection .header .commentForm .profilePicture{
+    margin-right: 16px;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.commentSection .header .commentForm{
+    display: flex;
+    margin-top: 14px;
+}
+
+.commentSection .header .commentForm textarea {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #111;
+    resize: none;
+}
+
+.commentSection .header .commentForm .postComment{
+    height: 36px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 0 15px;
+    border-radius: 2%;
+}
